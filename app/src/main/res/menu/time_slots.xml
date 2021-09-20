@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="8 AM - 9 AM"/>
+    <item
+        android:title="9 AM - 10 AM"/>
+    <item
+        android:title="11 AM - 12 PM"/>
+    <item
+        android:title="12 PM - 1 PM"/>
+    <item
+        android:title="1 PM - 2 PM"/>
+    <item
+        android:title="2 PM - 3 PM"/>
+    <item
+        android:title="3 PM - 4 PM"/>
+    <item
+        android:title="5 PM - 6 PM"/>
+    <item
+        android:title="7 PM - 8 PM"/>
+</menu>

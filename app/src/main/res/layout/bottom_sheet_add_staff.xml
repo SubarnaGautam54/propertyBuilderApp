@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_weight="10"
+    android:paddingBottom="@dimen/_10sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/closeBS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/close_orange"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+            </RelativeLayout>
+            <FrameLayout
+                android:layout_width="@dimen/_92sdp"
+                android:layout_height="@dimen/_92sdp"
+                android:layout_centerInParent="true">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/staffImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:civ_border_width="@dimen/_1sdp"
+                    app:civ_border_color="@color/primaryColor"
+                    />
+                <LinearLayout
+                    android:id="@+id/staffPickImage_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_gravity="bottom|right">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/circle"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/add" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_16sdp">
+
+        <EditText
+            android:id="@+id/staffFullNameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/textColorHint"
+            android:backgroundTint="@color/primaryLightColor" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/staffAddressEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:textColorHint="@color/textColorHint"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/primaryLightColor"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/phoneNumberEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:textColorHint="@color/textColorHint"
+            android:backgroundTint="@color/primaryLightColor"
+            android:textColor="@color/black"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/staffEmailEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/textColorHint"
+            android:backgroundTint="@color/primaryLightColor" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <EditText
+            android:id="@+id/staffPasswordEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/textColorHint"
+            android:backgroundTint="@color/primaryLightColor"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <EditText
+            android:id="@+id/staffConfirmPasswordEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/textColorHint"
+            android:backgroundTint="@color/primaryLightColor"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/staffCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/primaryLightColor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Password"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+            <Button
+                android:id="@+id/confirmAddStaff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Add"
+                android:layout_centerVertical="true"/>
+            <Button
+                android:id="@+id/cancelAddStaff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/white"
+                android:text="Cancel"
+                android:textColor="@color/primaryColor"/>
+            <ProgressBar
+                android:id="@+id/staffProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

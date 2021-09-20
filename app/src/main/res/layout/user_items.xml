@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="@dimen/_14sdp"
+    android:layout_marginVertical="@dimen/_5sdp"
+    app:cardElevation="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/home_bg">
+
+        </RelativeLayout>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/developerProfileImage"
+                android:layout_width="@dimen/_60sdp"
+                android:visibility="gone"
+                android:layout_height="@dimen/_60sdp"
+                app:civ_border_width="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                app:civ_border_color="@color/primaryLightColor"
+                android:src="@drawable/ic_baseline_person_24"/>
+
+
+            <TextView
+                android:id="@+id/developerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="@dimen/_14sdp"
+                android:layout_below="@id/developerProfileImage"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:text="Developer Name"/>
+
+
+        <TextView
+            android:id="@+id/post_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:text="Post Name: "
+            android:textColor="@color/primaryColor"
+            android:layout_below="@id/layout1"/>
+        <Space
+            android:id="@+id/space5"
+            android:layout_width="match_parent"
+            android:layout_below="@id/post_name_txt"
+            android:layout_height="@dimen/_5sdp"/>
+
+        <TextView
+            android:id="@+id/postName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/space5"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:text="Developer Post Name"/>
+
+
+        <Space
+            android:id="@+id/space2"
+            android:layout_below="@id/postName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+        <TextView
+            android:id="@+id/dec_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:text="Description: "
+            android:textColor="@color/primaryColor"
+            android:layout_below="@id/space2"/>
+        <Space
+            android:id="@+id/space4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_below="@id/dec_txt"/>
+        <TextView
+            android:id="@+id/developerPostDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/space4"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:text="Developer Post Details"/>
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_below="@id/developerPostDetail"/>
+        <TextView
+            android:id="@+id/showDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Details"
+            android:layout_below="@id/space3"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textColor="@color/primaryColor"/>
+        <Button
+            android:id="@+id/showDetails_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:textSize="@dimen/_8sdp"
+            android:visibility="gone"
+            android:layout_below="@id/space3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="Show Details"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

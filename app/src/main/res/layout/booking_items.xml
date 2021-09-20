@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="@dimen/_14sdp"
+    android:layout_marginVertical="@dimen/_5sdp"
+    app:cardElevation="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/home_bg">
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/post_name_txt_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:text="Post Name: "
+            android:textColor="@color/primaryColor"
+            android:layout_below="@id/layout1"/>
+        <Space
+            android:id="@+id/space5"
+            android:layout_width="match_parent"
+            android:layout_below="@id/post_name_txt_booking"
+            android:layout_height="@dimen/_5sdp"/>
+
+        <TextView
+            android:id="@+id/postName_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/space5"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:text="Developer Post Name"/>
+
+
+        <Space
+            android:id="@+id/space2"
+            android:layout_below="@id/postName_booking"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+        <TextView
+            android:id="@+id/dec_txt_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:text="Description: "
+            android:textColor="@color/primaryColor"
+            android:layout_below="@id/space2"/>
+        <Space
+            android:id="@+id/space4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_below="@id/dec_txt_booking"/>
+        <TextView
+            android:id="@+id/developerPostDetail_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/space4"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:text="Developer Post Details"/>
+        <Space
+            android:id="@+id/space3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_below="@id/developerPostDetail_booking"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/bookNowBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/space3"
+            android:text="Book An Appointment"
+            app:backgroundTint="@color/primaryLightColor"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

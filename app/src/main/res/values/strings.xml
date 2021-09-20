@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PropertyBuilder</string>
+    <string name="map_key" translatable="false">MapCurrentLocationApp</string>
+    <string name="google_map_key">AIzaSyBeFzf4CJoWnD74jkOrfJNobxBIRKkdwGs</string>
+    <string name="access_token"
+        translatable="false">pk.eyJ1IjoiaGFzc2FuenViYWlyIiwiYSI6ImNrczZ3OXh2MDBnOG4ycHMwcmo3cnd2N3AifQ.Z3bx7Sq6wcswQFCNhpqi-Q</string>
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+    <string name="Select_date_for_booking"><font size="15">Select Date For Booking</font></string>
+    <string name="select_time_slot"><font size="15">Select Time Slot</font></string>
+    <string name="oldPassword"><font size="15">Enter Old Password</font></string>
+    <string name="newPassword"><font size="15">Enter New Password</font></string>
+    <string name="ConfirmNewPassword"><font size="15">Enter Confirm New Password</font></string>
+
+</resources>

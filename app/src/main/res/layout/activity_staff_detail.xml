@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Adapters.StaffDetailActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        app:titleTextColor="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_below="@id/toolBar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/staffImage"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/no_image"
+                app:civ_border_color="@color/primaryColor"
+                app:civ_border_width="@dimen/_1sdp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/primaryColor"/>
+            <EditText
+                android:id="@+id/staffFullNameEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/cursor_white"
+                android:textColor="@color/black"
+                android:textColorHint="@color/textColorHint"
+                android:backgroundTint="@color/primaryLightColor" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/primaryColor"/>
+            <EditText
+                android:id="@+id/staffAddressEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/cursor_white"
+                android:textColorHint="@color/textColorHint"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/primaryLightColor"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textColor="@color/primaryColor"/>
+            <EditText
+                android:id="@+id/phoneNumberEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/cursor_white"
+                android:textColorHint="@color/textColorHint"
+                android:backgroundTint="@color/primaryLightColor"
+                android:textColor="@color/black"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/primaryColor"/>
+            <EditText
+                android:id="@+id/staffEmailEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textCursorDrawable="@drawable/cursor_white"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/textColorHint"
+                android:backgroundTint="@color/primaryLightColor" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/primaryColor"/>
+            <EditText
+                android:id="@+id/staffPasswordEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textCursorDrawable="@drawable/cursor_white"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/textColorHint"
+                android:backgroundTint="@color/primaryLightColor"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/updateDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Update Details"
+                    android:textAllCaps="false" />
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
