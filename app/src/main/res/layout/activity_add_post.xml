@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:text="Add Post"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_17sdp"
                 android:textStyle="bold"
                 android:layout_toEndOf="@id/back"
                 android:textColor="@color/white"
