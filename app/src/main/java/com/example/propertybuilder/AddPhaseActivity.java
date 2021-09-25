@@ -118,8 +118,6 @@ public class AddPhaseActivity extends AppCompatActivity {
                 } else if (phaseDes.isEmpty()) {
                     binding.phaseDesc.requestFocus();
                     binding.phaseDesc.setError("Enter Phase Description");
-                } else if (selectedPath.equals("0")) {
-                    Toast.makeText(AddPhaseActivity.this, "Select Video For Phase", Toast.LENGTH_SHORT).show();
 
                 } else {
                     binding.progressBar.setVisibility(View.VISIBLE);
@@ -219,7 +217,7 @@ public class AddPhaseActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (checkPermissionREAD_EXTERNAL_STORAGE(AddPhaseActivity.this)) {
-                    // do your stuff..
+
                     chooseVideo();
                 }
             }
