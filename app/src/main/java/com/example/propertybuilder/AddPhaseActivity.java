@@ -251,9 +251,6 @@ public class AddPhaseActivity extends AppCompatActivity {
                 phaseApiCall(phaseDes, s);
 
                 uploading.dismiss();
-// api call us mai apny s or phase id send krni hy
-// video get ki uri hy ...
-// http://localhost/propertyBuilder/upload/s
             }
 
 
