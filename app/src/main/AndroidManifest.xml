@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.propertybuilder">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -30,7 +31,7 @@
         <activity android:name=".Adapters.StaffDetailActivity" />
         <activity android:name=".UserManagementActivity" />
         <activity android:name=".SettingActivity" />
-        <activity android:name=".SitesActivity" />
+        <activity android:name=".TaskActivityActivity" />
         <activity android:name=".InspectionRequestActivity" />
         <activity android:name=".BookingActivity" />
         <activity android:name=".ContactActivity" />
