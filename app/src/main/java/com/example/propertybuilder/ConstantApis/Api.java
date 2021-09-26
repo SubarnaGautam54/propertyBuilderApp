@@ -4,7 +4,6 @@ public class Api {
     public static final String ROOT_IP_ADDRESS = "3.25.123.145";
     public static final String CUS_REGISTER= "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/cus_register.php";
     public static final String CUS_LOGIN= "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/cus_login.php";
-    public static final String CONN= "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/conn.php";
     public static final String CUS_PROFILE_UPDATE= "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/cus_update.php";
     public static final String DEV_ADD_POST= "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/add_post.php";
     public static final String IMAGE_BASE_URL= "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/uploads/";
@@ -43,6 +42,12 @@ public class Api {
     public static final String UPDATE_COMMENT= "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/update_comment.php";
     public static final String ADMIN_SEND_REPLY= "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/update_appointment_admin.php";
     public static final String UPLOAD_URL = "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/add_videos.php";
+    public static final String ADD_TASK = "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/add_task.php";
+    public static final String GET_DEVELOPER_TASK = "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/get_task_developer.php";
+    public static final String UPDATE_TASK_STATUS = "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/update_task_status.php";
+    public static final String GET_ALL_TASK = "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/get_all_task.php";
+    public static final String DELETE_TASK = "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/delete_task.php";
+    public static final String UPDATE_TASK = "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/update_task.php";
 
 
 }

@@ -46,8 +46,9 @@ public class DashBoardUserActivity extends AppCompatActivity {
         type = usersModel.getTypeUser();
         userId = String.valueOf(usersModel.getId());
 
-        FirebaseMessaging.getInstance().subscribeToTopic("user" + "");
-        if (type.equals("developer") || type.equals("customer")) {
+        FirebaseMessaging.getInstance().subscribeToTopic("user");
+//        FirebaseMessaging.getInstance().subscribeToTopic("3");
+        if (type.equals("developer") || type.equals("customer") || type.equals("admin")) {
 
             FirebaseMessaging.getInstance().subscribeToTopic(userId + "");
         } else {
@@ -133,7 +134,7 @@ public class DashBoardUserActivity extends AppCompatActivity {
                 binding.cardSitesDeveloper.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        startActivity(new Intent(DashBoardUserActivity.this, SitesActivity.class));
+                        startActivity(new Intent(DashBoardUserActivity.this, TaskActivityActivity.class));
                     }
                 });
                 binding.cardSettingsDeveloper.setOnClickListener(new View.OnClickListener() {
@@ -169,6 +170,12 @@ public class DashBoardUserActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         startActivity(new Intent(DashBoardUserActivity.this, InspectionRequestActivity.class));
+                    }
+                });
+                binding.cardTaskAdmin.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(DashBoardUserActivity.this,TaskActivityActivity.class));
                     }
                 });
                 binding.cardUserManagementAdmin.setOnClickListener(new View.OnClickListener() {

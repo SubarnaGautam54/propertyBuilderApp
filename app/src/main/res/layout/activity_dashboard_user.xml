@@ -246,7 +246,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        </LinearLayout>
+    </LinearLayout>
     <LinearLayout
         android:id="@+id/developerViewLy"
         android:layout_below="@id/toolBar"
@@ -393,14 +393,15 @@
                             android:layout_height="@dimen/_50sdp"
                             android:layout_centerInParent="true"
                             android:src="@drawable/ic_handyman_tools"/>
+
                         <TextView
                             android:id="@+id/sites_developer"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/sites_img_developer"
-                            android:textColor="@color/black"
                             android:layout_centerInParent="true"
-                            android:text="Sites"/>
+                            android:text="Task"
+                            android:textColor="@color/black" />
                     </RelativeLayout>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
@@ -479,165 +480,234 @@
             </LinearLayout>
         </LinearLayout>
 
-        </LinearLayout>
+    </LinearLayout>
+
     <LinearLayout
         android:id="@+id/adminViewLy"
-        android:layout_below="@id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible"
-        android:weightSum="6"
+        android:layout_below="@id/toolBar"
         android:orientation="vertical"
-        android:gravity="center">
+        android:visibility="visible"
+        android:weightSum="6">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_weight="2"
             android:orientation="horizontal"
-            android:weightSum="10"
-            android:layout_weight="2">
+            android:weightSum="10">
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="5">
+
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/card_home_admin"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:cardCornerRadius="@dimen/_16sdp"
                     android:layout_marginHorizontal="@dimen/_10sdp"
                     android:layout_marginVertical="@dimen/_16sdp"
-                    android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_16sdp"
                     app:cardElevation="@dimen/_5sdp">
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
+
                         <ImageView
                             android:id="@+id/home_img_admin"
                             android:layout_width="@dimen/_50sdp"
                             android:layout_height="@dimen/_50sdp"
                             android:layout_centerInParent="true"
-                            android:src="@drawable/ic_baseline_home_24"/>
+                            android:src="@drawable/ic_baseline_home_24" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/home_img_admin"
-                            android:textColor="@color/black"
                             android:layout_centerInParent="true"
-                            android:text="Home"/>
+                            android:text="Home"
+                            android:textColor="@color/black" />
                     </RelativeLayout>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="5">
+
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/cardInspection_admin"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:cardCornerRadius="@dimen/_16sdp"
                     android:layout_marginHorizontal="@dimen/_10sdp"
                     android:layout_marginVertical="@dimen/_16sdp"
-                    android:foreground="?android:attr/selectableItemBackground"
                     android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_16sdp"
                     app:cardElevation="@dimen/_5sdp">
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
+
                         <ImageView
                             android:id="@+id/dashBoard_img_admin"
                             android:layout_width="@dimen/_50sdp"
                             android:layout_height="@dimen/_50sdp"
                             android:layout_centerInParent="true"
-                            android:src="@drawable/ic_booking"/>
+                            android:src="@drawable/ic_booking" />
+
                         <TextView
                             android:id="@+id/Inspection_admin"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/dashBoard_img_admin"
-                            android:textColor="@color/black"
                             android:layout_centerInParent="true"
-                            android:text="Inspection Request"/>
-                    </RelativeLayout>
-                </com.google.android.material.card.MaterialCardView>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:weightSum="10"
-            android:layout_weight="2">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="5">
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/card_userManagement_admin"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:cardCornerRadius="@dimen/_16sdp"
-                    android:layout_marginHorizontal="@dimen/_10sdp"
-                    android:layout_marginVertical="@dimen/_16sdp"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    app:cardElevation="@dimen/_5sdp">
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-                        <ImageView
-                            android:id="@+id/userManagement_img_admin"
-                            android:layout_width="@dimen/_50sdp"
-                            android:layout_height="@dimen/_50sdp"
-                            android:layout_centerInParent="true"
-                            android:src="@drawable/ic_baseline_person_24"/>
-                        <TextView
-                            android:id="@+id/userManagement_admin"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/userManagement_img_admin"
-                            android:textColor="@color/black"
-                            android:layout_centerInParent="true"
-                            android:text="User Management"/>
-                    </RelativeLayout>
-                </com.google.android.material.card.MaterialCardView>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="5">
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/card_logout_admin"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:cardCornerRadius="@dimen/_16sdp"
-                    android:layout_marginHorizontal="@dimen/_10sdp"
-                    android:layout_marginVertical="@dimen/_16sdp"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    app:cardElevation="@dimen/_5sdp">
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-                        <ImageView
-                            android:id="@+id/logout_img_admin"
-                            android:layout_width="@dimen/_50sdp"
-                            android:layout_height="@dimen/_50sdp"
-                            android:layout_centerInParent="true"
-                            android:src="@drawable/ic_logout"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/logout_img_admin"
-                            android:textColor="@color/black"
-                            android:layout_centerInParent="true"
-                            android:text="LogOut"/>
+                            android:text="Inspection Request"
+                            android:textColor="@color/black" />
                     </RelativeLayout>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_userManagement_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_16sdp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_16sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/userManagement_img_admin"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_baseline_person_24" />
+
+                        <TextView
+                            android:id="@+id/userManagement_admin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/userManagement_img_admin"
+                            android:layout_centerInParent="true"
+                            android:text="User Management"
+                            android:textColor="@color/black" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_logout_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_16sdp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_16sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/logout_img_admin"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_logout" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/logout_img_admin"
+                            android:layout_centerInParent="true"
+                            android:text="LogOut"
+                            android:textColor="@color/black" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_task_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_16sdp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/_16sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/task_img_admin"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_handyman_tools" />
+
+                        <TextView
+                            android:id="@+id/task_admin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/task_img_admin"
+                            android:layout_centerInParent="true"
+                            android:text="Tasks"
+                            android:textColor="@color/black" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
