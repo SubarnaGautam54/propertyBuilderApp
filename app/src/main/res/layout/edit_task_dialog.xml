@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:backgroundTint="@color/primaryColor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Options"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_16sdp"/>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:id="@+id/update_task_ly"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:paddingHorizontal="@dimen/_16sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp"
+            android:text="Edit Task"
+            android:layout_marginVertical="@dimen/_16sdp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tintedBlack"/>
+    <LinearLayout
+        android:id="@+id/delete_task_ly"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:layout_weight="5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp"
+            android:layout_marginVertical="@dimen/_16sdp"
+            android:text="Delete Task"
+            android:textColor="@color/primaryDarkColor"/>
+    </LinearLayout>
+
+</LinearLayout>
