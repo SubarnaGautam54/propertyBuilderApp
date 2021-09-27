@@ -11,7 +11,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2.5">
+        android:layout_weight="2.5"
+        android:background="@drawable/helloman">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -20,6 +21,7 @@
             <FrameLayout
                 android:layout_width="@dimen/_92sdp"
                 android:layout_height="@dimen/_92sdp"
+
                 android:layout_centerInParent="true">
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/profileImage"
@@ -27,7 +29,7 @@
                     android:layout_height="wrap_content"
                     app:civ_border_width="@dimen/_2sdp"
                     app:civ_border_color="@color/primaryLightColor"
-                     />
+                    />
                 <LinearLayout
                     android:id="@+id/pickImage_btn"
                     android:layout_width="wrap_content"
@@ -48,6 +50,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:src="@drawable/add" />
+
                     </FrameLayout>
 
                 </LinearLayout>
@@ -60,11 +63,16 @@
         </RelativeLayout>
     </LinearLayout>
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/subarna"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="7.5"
         android:orientation="vertical"
+        android:background="@drawable/subarna"
         android:paddingHorizontal="@dimen/_16sdp">
 
         <EditText
@@ -73,11 +81,12 @@
             android:layout_height="wrap_content"
             android:hint="Full Name"
             android:inputType="textPersonName"
+            android:textSize="@dimen/_14sdp"
             android:singleLine="true"
             android:textCursorDrawable="@drawable/cursor_white"
             android:textColor="@color/black"
             android:textColorHint="@color/textColorHint"
-            android:backgroundTint="@color/primaryLightColor" />
+            android:backgroundTint="@color/primaryDarkColor" />
 
         <Space
             android:layout_width="match_parent"
@@ -88,12 +97,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Address"
+            android:textSize="@dimen/_14sdp"
             android:inputType="text"
             android:singleLine="true"
             android:textCursorDrawable="@drawable/cursor_white"
             android:textColorHint="@color/textColorHint"
             android:textColor="@color/black"
-            android:backgroundTint="@color/primaryLightColor"/>
+            android:backgroundTint="@color/primaryDarkColor" />
 
         <Space
             android:layout_width="match_parent"
@@ -105,11 +115,12 @@
             android:layout_height="wrap_content"
             android:hint="Phone Number"
             android:inputType="phone"
+            android:textSize="@dimen/_14sdp"
             android:maxLength="10"
             android:singleLine="true"
             android:textCursorDrawable="@drawable/cursor_white"
             android:textColorHint="@color/textColorHint"
-            android:backgroundTint="@color/primaryLightColor"
+            android:backgroundTint="@color/primaryDarkColor"
             android:textColor="@color/black"/>
 
         <Space
@@ -122,11 +133,12 @@
             android:layout_height="wrap_content"
             android:hint="Email"
             android:inputType="textEmailAddress"
+            android:textSize="@dimen/_14sdp"
             android:textCursorDrawable="@drawable/cursor_white"
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="@color/textColorHint"
-            android:backgroundTint="@color/primaryLightColor" />
+            android:backgroundTint="@color/primaryDarkColor" />
 
         <Space
             android:layout_width="match_parent"
@@ -137,11 +149,12 @@
             android:layout_height="wrap_content"
             android:hint="Password"
             android:inputType="textPassword"
+            android:textSize="@dimen/_14sdp"
             android:textCursorDrawable="@drawable/cursor_white"
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="@color/textColorHint"
-            android:backgroundTint="@color/primaryLightColor"/>
+            android:backgroundTint="@color/primaryDarkColor"/>
         <Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />
@@ -151,11 +164,12 @@
             android:layout_height="wrap_content"
             android:hint="Confirm Password"
             android:inputType="textPassword"
+            android:textSize="@dimen/_14sdp"
             android:textCursorDrawable="@drawable/cursor_white"
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="@color/textColorHint"
-            android:backgroundTint="@color/primaryLightColor"/>
+            android:backgroundTint="@color/primaryDarkColor"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -164,12 +178,12 @@
                 android:id="@+id/checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/primaryLightColor"/>
+                android:buttonTint="@color/primaryDarkColor"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Show Password"
-                android:textSize="@dimen/_12sdp"
+                android:textSize="@dimen/_14sdp"
                 android:textColor="@color/black"/>
         </LinearLayout>
 
@@ -211,6 +225,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
                 android:text="Already Have An Account?  "
                 android:textColor="@color/black"
                 />
@@ -218,9 +233,10 @@
                 android:id="@+id/login_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
                 android:text="Login"
                 android:textStyle="bold"
-                android:textColor="@color/primaryLightColor" />
+                android:textColor="@color/primaryDarkColor" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

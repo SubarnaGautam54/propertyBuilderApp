@@ -10,7 +10,7 @@
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/primaryColor"
+        android:background="@drawable/anil"
         app:titleTextColor="@color/white">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -58,16 +58,16 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-<!--                <com.mapbox.mapboxsdk.maps.MapView-->
-<!--                    android:id="@+id/mapView"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="@dimen/_200sdp"-->
-<!--                    mapbox:mapbox_styleUrl="@string/mapbox_style_mapbox_streets"/>-->
+                <!--                <com.mapbox.mapboxsdk.maps.MapView-->
+                <!--                    android:id="@+id/mapView"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="@dimen/_200sdp"-->
+                <!--                    mapbox:mapbox_styleUrl="@string/mapbox_style_mapbox_streets"/>-->
                 <fragment
                     android:id="@+id/google_map_post_details"
+                    class="com.google.android.gms.maps.SupportMapFragment"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_250sdp"
-                    android:name="com.google.android.gms.maps.SupportMapFragment"/>
+                    android:layout_height="@dimen/_250sdp" />
 
             </RelativeLayout>
             <androidx.cardview.widget.CardView
@@ -86,6 +86,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Address: "
+                        android:textSize="@dimen/_16sdp"
                         android:paddingHorizontal="@dimen/_5sdp"
                         android:textColor="@color/primaryColor"/>
                     <TextView
@@ -153,7 +154,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Property Name: "
                                 android:textColor="@color/primaryColor"
-                                android:textSize="@dimen/_13sdp"/>
+                                android:textSize="@dimen/_17sdp"/>
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -167,6 +168,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/_5sdp"
+                            android:textSize="@dimen/_16sdp"
                             android:text="Report Name"/>
                     </LinearLayout>
 
@@ -186,7 +188,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Property Description: "
                                 android:textColor="@color/primaryColor"
-                                android:textSize="@dimen/_13sdp"/>
+                                android:textSize="@dimen/_17sdp"/>
                             <ImageView
                                 android:id="@+id/edit_property_dec"
                                 android:layout_width="wrap_content"
@@ -201,6 +203,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/_5sdp"
+                            android:textSize="@dimen/_16sdp"
                             android:text="Property For Sale"/>
                     </LinearLayout>
                     <RelativeLayout
@@ -212,7 +215,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/_16sdp"
+                            android:textSize="@dimen/_17sdp"
                             android:text="Phases"
                             android:layout_centerInParent="true"
                             android:textColor="@color/white"/>
@@ -275,7 +278,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/_16sdp"
+                    android:textSize="@dimen/_17sdp"
                     android:text="Comments"
                     android:layout_centerInParent="true"
                     android:textColor="@color/white"/>
@@ -300,6 +303,7 @@
                         android:imeOptions="actionDone"
                         android:singleLine="true"
                         android:hint="Write Something"
+                        android:textSize="@dimen/_12sdp"
                         android:background="@drawable/edit_text_bg"/>
                 </LinearLayout>
                 <LinearLayout
@@ -312,6 +316,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="@dimen/_5sdp"
+                        android:textSize="@dimen/_12sdp"
                         android:text="Send"
                         android:textAllCaps="false"
                         android:background="@drawable/rounded_corners"/>

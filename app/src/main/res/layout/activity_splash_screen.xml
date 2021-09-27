@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryLightColor"
+    android:background="@drawable/anil"
     tools:context=".SplashScreenActivity">
 
     <ImageView
@@ -20,8 +20,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/appLogo"
         android:layout_centerInParent="true"
-        android:textSize="@dimen/_18sdp"
+        android:textSize="@dimen/_22sdp"
         android:textColor="@color/white"
+        android:textStyle="bold"
         android:text="Property Builder"/>
     <TextView
         android:layout_width="wrap_content"
@@ -30,5 +31,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/_16sdp"
         android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
         android:text="Trigensoft solution (p) ltd"/>
 </RelativeLayout>

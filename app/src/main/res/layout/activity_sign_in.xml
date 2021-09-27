@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:layout_weight="10"
     android:orientation="vertical"
+    android:background="@drawable/login"
     tools:context=".SignInActivity">
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,30 +14,35 @@
         android:orientation="vertical"
         android:gravity="center"
         android:layout_weight="3">
-       <TextView
-           android:id="@+id/welcome_to_text"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:textSize="@dimen/_24sdp"
-           android:layout_marginHorizontal="@dimen/_5sdp"
-           android:textColor="@color/primaryLightColor"
-           android:text="Welcome To"/>
+        <TextView
+            android:id="@+id/welcome_to_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_29sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Welcome To"/>
         <TextView
             android:id="@+id/property_builder_app_text"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:textSize="@dimen/_24sdp"
-           android:layout_marginHorizontal="@dimen/_5sdp"
-           android:textColor="@color/primaryLightColor"
-           android:text="Property Builder App"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_30sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Property Builder App"/>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_10sdp"/>
+            android:layout_height="@dimen/_20sdp"/>
         <TextView
             android:id="@+id/get_started_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             android:text="Login In to get Started!"/>
     </LinearLayout>
 
@@ -52,13 +58,14 @@
             android:id="@+id/emailEdt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="Email Address"
+            android:textSize="@dimen/_16sdp"
             android:inputType="textEmailAddress"
             android:textCursorDrawable="@drawable/cursor_white"
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="@color/textColorHint"
-            android:backgroundTint="@color/primaryLightColor" />
+            android:backgroundTint="@color/black" />
 
         <Space
             android:layout_width="match_parent"
@@ -68,12 +75,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
+            android:textSize="@dimen/_16sdp"
             android:inputType="textPassword"
             android:textCursorDrawable="@drawable/cursor_white"
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="@color/textColorHint"
-            android:backgroundTint="@color/primaryLightColor"/>
+            android:backgroundTint="@color/black"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -83,12 +91,12 @@
                 android:id="@+id/checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/primaryLightColor"/>
+                android:buttonTint="@color/black"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Show Password"
-                android:textSize="@dimen/_12sdp"
+                android:textSize="@dimen/_14sdp"
                 android:textColor="@color/black"/>
         </LinearLayout>
 
@@ -113,6 +121,7 @@
                 android:background="@drawable/rounded_corners"
                 android:text="LogIn"
                 android:textAllCaps="false"
+                android:textSize="@dimen/_15sdp"
                 android:textColor="@color/white" />
             <ProgressBar
                 android:id="@+id/progressBar"
@@ -131,6 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Don't Have An Account?  "
+                android:textSize="@dimen/_15sdp"
                 android:layout_marginBottom="@dimen/_18sdp"
                 android:textColor="@color/black"
                 />
@@ -139,13 +149,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SignUp"
-                android:layout_marginBottom="@dimen/_18sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
                 android:layout_toRightOf="@id/dis_txt"
+                android:textSize="@dimen/_16sdp"
                 android:textStyle="bold"
-                android:textColor="@color/primaryLightColor" />
+                android:textColor="@color/white" />
         </RelativeLayout>
 
 
-        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
