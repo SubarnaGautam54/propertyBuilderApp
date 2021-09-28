@@ -5,7 +5,9 @@
     android:layout_marginVertical="@dimen/_5sdp"
     app:cardElevation="@dimen/_10sdp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@drawable/tail"
+    >
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

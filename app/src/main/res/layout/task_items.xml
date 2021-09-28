@@ -8,13 +8,15 @@
     android:clickable="true"
     android:layout_marginVertical="@dimen/_8sdp"
     android:layout_marginHorizontal="@dimen/_8sdp"
-    android:focusable="true">
+    android:focusable="true"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:weightSum="10"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
