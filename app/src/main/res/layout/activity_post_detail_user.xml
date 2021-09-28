@@ -10,7 +10,7 @@
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@drawable/anil"
+        android:background="@color/primaryColor"
         app:titleTextColor="@color/white">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -88,7 +88,7 @@
                         android:text="Address: "
                         android:textSize="@dimen/_16sdp"
                         android:paddingHorizontal="@dimen/_5sdp"
-                        android:textColor="@color/primaryColor"/>
+                        android:textColor="@color/primaryDarkColor"/>
                     <TextView
                         android:id="@+id/completeAddressText"
                         android:layout_width="wrap_content"
@@ -153,7 +153,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Property Name: "
-                                android:textColor="@color/primaryColor"
+                                android:textColor="@color/primaryDarkColor"
                                 android:textSize="@dimen/_17sdp"/>
                             <ImageView
                                 android:layout_width="wrap_content"
@@ -187,7 +187,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Property Description: "
-                                android:textColor="@color/primaryColor"
+                                android:textColor="@color/primaryDarkColor"
                                 android:textSize="@dimen/_17sdp"/>
                             <ImageView
                                 android:id="@+id/edit_property_dec"
@@ -211,7 +211,7 @@
                         android:layout_height="wrap_content"
                         android:paddingVertical="@dimen/_5sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:background="@color/primaryColor">
+                        android:background="@color/primaryMuchLightColor">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -274,7 +274,7 @@
                 android:layout_height="wrap_content"
                 android:paddingVertical="@dimen/_5sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:background="@color/primaryColor">
+                android:background="@color/primaryMuchLightColor">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

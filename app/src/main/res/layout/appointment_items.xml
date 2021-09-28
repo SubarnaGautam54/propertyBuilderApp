@@ -12,7 +12,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="@dimen/_5sdp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/tail">
 
 
             <TextView
@@ -28,7 +29,8 @@
                 android:layout_gravity="center"
                 android:text="Pending"
                 android:textSize="@dimen/_15sdp"
-                android:textColor="@color/primaryColor"/>
+                android:textStyle="bold"
+                android:textColor="@color/primaryDarkColor"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/admin"
@@ -50,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:text="Message By Admin"
                 android:textSize="@dimen/_15sdp"
-                android:textColor="@color/primaryColor"
+                android:textColor="@color/primaryDarkColor"
                 android:layout_gravity="center_horizontal"/>
 
         </LinearLayout>

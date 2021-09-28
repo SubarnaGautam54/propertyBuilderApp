@@ -8,7 +8,8 @@
     android:layout_height="wrap_content">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/tail">
         <RelativeLayout
             android:id="@+id/layout1"
             android:layout_width="match_parent"
@@ -47,7 +48,9 @@
             android:layout_height="wrap_content"
             android:paddingHorizontal="@dimen/_5sdp"
             android:text="Post Name: "
-            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryDarkColor"
             android:layout_below="@id/layout1"/>
         <Space
             android:id="@+id/space5"
@@ -61,6 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/space5"
             android:paddingHorizontal="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
             android:text="Developer Post Name"/>
 
 
@@ -76,7 +80,9 @@
             android:layout_height="wrap_content"
             android:paddingHorizontal="@dimen/_5sdp"
             android:text="Description: "
-            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryDarkColor"
             android:layout_below="@id/space2"/>
         <Space
             android:id="@+id/space4"
@@ -89,6 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/space4"
             android:paddingHorizontal="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
             android:text="Developer Post Details"/>
         <Space
             android:id="@+id/space3"
