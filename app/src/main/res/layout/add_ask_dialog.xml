@@ -27,7 +27,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Select Type"
-        android:textColor="@color/primaryColor"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="@dimen/_13sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/task_person_name_edt" />
 
@@ -104,7 +105,8 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:text="Enter Name"
-        android:textColor="@color/primaryColor"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/primaryDarkColor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dev_spinner_task" />
 
@@ -170,7 +172,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:textColor="@color/primaryColor"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="@dimen/_13sdp"
         android:text="Select Developer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
