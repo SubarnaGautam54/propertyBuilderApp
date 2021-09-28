@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolBar"
-        android:background="@drawable/anil"
+        android:background="@color/white"
         android:orientation="vertical">
 
         <Space
@@ -36,8 +36,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white">
-
+                android:background="@color/edit_text_bg">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -80,8 +79,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="@color/edit_text_bg">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -123,7 +122,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="@color/edit_text_bg"
                 android:orientation="horizontal">
 
                 <ImageView
