@@ -5,6 +5,7 @@ public class PhaseModel {
     String postId;
     String phaseImages;
     String phaseDec;
+    String phaseName;
     String phaseVideo;
 
 //    public PhaseModel(String phaseId, String phaseImages, String phaseDec) {
@@ -13,6 +14,14 @@ public class PhaseModel {
 //        this.phaseDec = phaseDec;
 //    }
 
+
+    public String getPhaseName() {
+        return phaseName;
+    }
+
+    public void setPhaseName(String phaseName) {
+        this.phaseName = phaseName;
+    }
 
     public String getPhaseVideo() {
         return phaseVideo;

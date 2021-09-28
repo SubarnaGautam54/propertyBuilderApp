@@ -1,5 +1,6 @@
 package com.example.propertybuilder.Adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
@@ -68,10 +69,11 @@ public class PhaseAdapter extends RecyclerView.Adapter<PhaseAdapter.PhaseViewHol
     }
 
     @Override
-    public void onBindViewHolder(@NonNull @NotNull PhaseAdapter.PhaseViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull @NotNull PhaseAdapter.PhaseViewHolder holder, @SuppressLint("RecyclerView") int position) {
         UserModel usersModel = SharedPrefManager.getInstance(context).getUser();
         String type = usersModel.getTypeUser();
-        holder.phaseCounts.setText(String.valueOf(position+1));
+//        holder.phaseCounts.setText(String.valueOf(position+1));
+        holder.phaseCounts.setText(phaseModelList.get(position).getPhaseName());
         holder.phaseDecs.setText(phaseModelList.get(position).getPhaseDec());
         holder.phaseDetailsBtn.setOnClickListener(new View.OnClickListener() {
             @Override

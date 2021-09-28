@@ -10,8 +10,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -25,6 +24,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PropertyBuilder"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".UserBehaviourActivity"
+            android:exported="true" />
         <activity android:name=".utils.AppointmentActivity" />
         <activity android:name=".PhaseDetailActivity" />
         <activity android:name=".AddPhaseActivity" />
@@ -35,9 +37,11 @@
         <activity android:name=".InspectionRequestActivity" />
         <activity android:name=".BookingActivity" />
         <activity android:name=".ContactActivity" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_map_key" />
+
         <activity
             android:name=".AddPostActivity"
             android:screenOrientation="portrait" />

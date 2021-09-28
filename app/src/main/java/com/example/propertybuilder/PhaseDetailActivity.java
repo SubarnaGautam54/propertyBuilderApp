@@ -244,7 +244,7 @@ public class PhaseDetailActivity extends AppCompatActivity {
 
     }
 
-//    private void setupPager() {
+    //    private void setupPager() {
 //
 //
 //        mViewPagerAdapter = new ViewPagerAdapter(PhaseDetailActivity.this, images);

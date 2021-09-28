@@ -19,17 +19,19 @@
                 android:id="@+id/phaseText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phase "
-                android:textSize="@dimen/_17sdp"
+                android:text="Phase Name: "
+                android:textStyle="bold"
+                android:textSize="@dimen/_16sdp"
                 android:textColor="@color/primaryDarkColor"/>
+
             <TextView
                 android:id="@+id/phaseCounts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=""
                 android:layout_toRightOf="@id/phaseText"
-                android:textSize="@dimen/_16sdp"
-                android:textColor="@color/primaryColor"/>
+                android:text=""
+                android:textColor="@color/primaryDarkColor"
+                android:textSize="@dimen/_16sdp" />
             <ImageView
                 android:id="@+id/removePhase"
                 android:layout_width="wrap_content"
@@ -44,8 +46,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/_16sdp"
+                android:textSize="@dimen/_14sdp"
                 android:textColor="@color/primaryDarkColor"
+                android:textStyle="bold"
                 android:text="Phase Description: "/>
             <TextView
                 android:id="@+id/phaseDescription_phase"

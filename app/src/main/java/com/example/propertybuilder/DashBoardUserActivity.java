@@ -184,6 +184,12 @@ public class DashBoardUserActivity extends AppCompatActivity {
                         startActivity(new Intent(DashBoardUserActivity.this, UserManagementActivity.class));
                     }
                 });
+                binding.cardUserBehaviourActivityAdmin.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(DashBoardUserActivity.this,UserBehaviourActivity.class));
+                    }
+                });
                 binding.cardLogoutAdmin.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

@@ -48,6 +48,8 @@ public class Api {
     public static final String GET_ALL_TASK = "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/get_all_task.php";
     public static final String DELETE_TASK = "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/delete_task.php";
     public static final String UPDATE_TASK = "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/update_task.php";
+    public static final String POST_USER_BEHAVIOUR = "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/user_behaviour.php";
+    public static final String GET_USER_BEHAVIOUR = "http://"+ROOT_IP_ADDRESS+"/propertyBuilder/get_user_behaviour.php";
 
 
 }

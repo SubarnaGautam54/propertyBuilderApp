@@ -161,8 +161,8 @@ public class PostDetailUserActivity extends AppCompatActivity implements OnMapRe
 //            binding.addCommentLy.setVisibility(View.GONE);
 //        }
         manager = new LinearLayoutManager(this);
-         lat = Double.parseDouble(intent.getStringExtra("lat"));
-         lng = Double.parseDouble(intent.getStringExtra("lng"));
+        lat = Double.parseDouble(intent.getStringExtra("lat"));
+        lng = Double.parseDouble(intent.getStringExtra("lng"));
         supportMapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.google_map_post_details);
         supportMapFragment.getMapAsync(this);
@@ -234,6 +234,7 @@ public class PostDetailUserActivity extends AppCompatActivity implements OnMapRe
 
                         PhaseModel phaseModel = new PhaseModel();
                         phaseModel.setPhaseId(jsonObject1.getString("id"));
+                        phaseModel.setPhaseName(jsonObject1.getString("phase_name"));
                         phaseModel.setPhaseDec(jsonObject1.getString("description"));
                         phaseModel.setPostId(jsonObject1.getString("post_id"));
                         phaseModel.setPhaseVideo(jsonObject1.getString("phase_video"));
@@ -562,7 +563,15 @@ public class PostDetailUserActivity extends AppCompatActivity implements OnMapRe
             }
         }
     }
-
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull @NotNull String[] permissions, @NonNull @NotNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == 44){
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                getCurrentLocation();
+            }
+        }
+    }
     @Override
     public void onMapReady(@NonNull @NotNull GoogleMap googleMap) {
         mMap = googleMap;

@@ -112,9 +112,13 @@ public class AddPhaseActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String phaseDes = binding.phaseDesc.getText().toString();
+                String phaseName = binding.phaseName.getText().toString();
 
                 if (arrayList_images.isEmpty()) {
                     Toast.makeText(AddPhaseActivity.this, "Select Images For Phase", Toast.LENGTH_SHORT).show();
+                } else if (phaseName.isEmpty()) {
+                    binding.phaseName.requestFocus();
+                    binding.phaseName.setError("Enter Phase Name");
                 } else if (phaseDes.isEmpty()) {
                     binding.phaseDesc.requestFocus();
                     binding.phaseDesc.setError("Enter Phase Description");
@@ -122,14 +126,14 @@ public class AddPhaseActivity extends AppCompatActivity {
                 } else {
                     binding.progressBar.setVisibility(View.VISIBLE);
                     binding.confirmPhaseBtn.setVisibility(View.GONE);
-                    uploadVideo(phaseDes);
+                    uploadVideo(phaseName,phaseDes);
 
                 }
             }
         });
     }
 
-    private void phaseApiCall(String phaseDes, String post_video) {
+    private void phaseApiCall(String phaseName,String phaseDes, String post_video) {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, Api.ADD_PHASE_NEW, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -153,6 +157,7 @@ public class AddPhaseActivity extends AppCompatActivity {
                 String data = gson.toJson(arrayList_images);
 
                 Map<String, String> params = new HashMap<>();
+                params.put("phase_name", phaseName);
                 params.put("description", phaseDes);
                 params.put("images", data);
                 params.put("post_id", postId);
@@ -217,14 +222,14 @@ public class AddPhaseActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (checkPermissionREAD_EXTERNAL_STORAGE(AddPhaseActivity.this)) {
-
+                    // do your stuff..
                     chooseVideo();
                 }
             }
         });
     }
 
-    private void uploadVideo(String phaseDes) {
+    private void uploadVideo(String phaseName, String phaseDes) {
         class UploadVideo extends AsyncTask<Void, Void, String> {
 
             ProgressDialog uploading;
@@ -246,9 +251,12 @@ public class AddPhaseActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
-                phaseApiCall(phaseDes, s);
+                phaseApiCall(phaseName,phaseDes, s);
 
                 uploading.dismiss();
+// api call us mai apny s or phase id send krni hy
+// video get ki uri hy ...
+// http://localhost/propertyBuilder/upload/s
             }
 
 

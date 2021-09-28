@@ -86,9 +86,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Address: "
-                        android:textSize="@dimen/_16sdp"
                         android:paddingHorizontal="@dimen/_5sdp"
-                        android:textColor="@color/primaryDarkColor"/>
+                        android:textColor="@color/primaryColor"/>
                     <TextView
                         android:id="@+id/completeAddressText"
                         android:layout_width="wrap_content"
@@ -154,7 +153,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Property Name: "
                                 android:textColor="@color/primaryDarkColor"
-                                android:textSize="@dimen/_17sdp"/>
+                                android:textSize="@dimen/_16sdp"/>
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -168,7 +167,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/_5sdp"
-                            android:textSize="@dimen/_16sdp"
                             android:text="Report Name"/>
                     </LinearLayout>
 
@@ -188,7 +186,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Property Description: "
                                 android:textColor="@color/primaryDarkColor"
-                                android:textSize="@dimen/_17sdp"/>
+                                android:textSize="@dimen/_16sdp"/>
                             <ImageView
                                 android:id="@+id/edit_property_dec"
                                 android:layout_width="wrap_content"
@@ -203,7 +201,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/_5sdp"
-                            android:textSize="@dimen/_16sdp"
                             android:text="Property For Sale"/>
                     </LinearLayout>
                     <RelativeLayout
@@ -215,7 +212,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/_17sdp"
+                            android:textSize="@dimen/_16sdp"
                             android:text="Phases"
                             android:layout_centerInParent="true"
                             android:textColor="@color/white"/>
@@ -278,7 +275,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/_17sdp"
+                    android:textSize="@dimen/_16sdp"
                     android:text="Comments"
                     android:layout_centerInParent="true"
                     android:textColor="@color/white"/>
@@ -303,7 +300,6 @@
                         android:imeOptions="actionDone"
                         android:singleLine="true"
                         android:hint="Write Something"
-                        android:textSize="@dimen/_12sdp"
                         android:background="@drawable/edit_text_bg"/>
                 </LinearLayout>
                 <LinearLayout
@@ -316,7 +312,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="@dimen/_5sdp"
-                        android:textSize="@dimen/_12sdp"
                         android:text="Send"
                         android:textAllCaps="false"
                         android:background="@drawable/rounded_corners"/>

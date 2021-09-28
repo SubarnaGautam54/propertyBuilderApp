@@ -65,6 +65,7 @@ public class AddPostActivity extends AppCompatActivity implements OnMapReadyCall
     FusedLocationProviderClient client;
     GoogleMap mMap;
     Marker marker;
+    String userName;
 
     ////////////////////////////////////////////////////////////////
     public static final String FIREBASE_NOTIFICATION_SERVER_KEY = "key=AAAAjEeogSU:APA91bEa1suwdOU23my3AcKQKobAethPxjdrg-G1HY-woF7jJoIGGeV-D0JGRuUagygOc1MdZKBajB8V9zQvQ4uaie7LEq3ZEZi5CZ1lwx8QjOFlGMhdBEX1DQlzGzY21MNL2TOqSC3y";
@@ -93,7 +94,8 @@ public class AddPostActivity extends AppCompatActivity implements OnMapReadyCall
         }
         UserModel usersModel = SharedPrefManager.getInstance(this).getUser();
         userId = usersModel.getId();
-         selectedPointLat = 0;
+        userName = usersModel.getFullName();
+        selectedPointLat = 0;
         selectedPointLog = 0;
         clicks();
     }
@@ -141,20 +143,20 @@ public class AddPostActivity extends AppCompatActivity implements OnMapReadyCall
     }
     @Override
     public void onMapClick(@NonNull @NotNull LatLng latLng) {
-         selectedPointLat  = latLng.latitude;
-         selectedPointLog  = latLng.longitude;
+        selectedPointLat  = latLng.latitude;
+        selectedPointLog  = latLng.longitude;
         Log.d(TAG, "onMapClick: "+selectedPointLat+ " "+selectedPointLog);
 
 
-       if (marker != null){
-           marker.remove();
-       }
+        if (marker != null){
+            marker.remove();
+        }
 
-            marker = mMap.addMarker(new MarkerOptions()
-                    .position(latLng)
-                    .icon(BitmapFromVector(getApplicationContext(), R.drawable.ic_pin))
-                    .draggable(true)
-                    .title("Property Location"));
+        marker = mMap.addMarker(new MarkerOptions()
+                .position(latLng)
+                .icon(BitmapFromVector(getApplicationContext(), R.drawable.ic_pin))
+                .draggable(true)
+                .title("Property Location"));
         marker.showInfoWindow();
         Geocoder geocoder = new Geocoder(AddPostActivity.this, Locale.getDefault());
 
@@ -179,8 +181,7 @@ public class AddPostActivity extends AppCompatActivity implements OnMapReadyCall
 
         }
 
-
-        }
+    }
 
 
     private void clicks() {
@@ -225,7 +226,7 @@ public class AddPostActivity extends AppCompatActivity implements OnMapReadyCall
 //            Toast.makeText(this, "Select Images Of Property", Toast.LENGTH_SHORT).show();
 
 //    }
-    else {
+        else {
             binding.sendPostBtn.setVisibility(View.GONE);
             binding.progressBar.setVisibility(View.VISIBLE);
             StringRequest stringRequest = new StringRequest(Request.Method.POST, Api.ADD_POST_NEW, new Response.Listener<String>() {
@@ -234,6 +235,7 @@ public class AddPostActivity extends AppCompatActivity implements OnMapReadyCall
                     Log.d(TAG, "onResponse:000000    " + response + "     00000");
 
                     createnotification("customer",postName, postDec, "user");
+                    userBehaviour(userName+" has send a post");
                     finish();
 
                 }
@@ -339,5 +341,26 @@ public class AddPostActivity extends AppCompatActivity implements OnMapReadyCall
         double lat = latLng.latitude;
         double lng = latLng.longitude;
         Log.d(TAG, "onMarkerDragEnd: "+lat+" "+lng);
+    }
+    private void userBehaviour(String message) {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, Api.POST_USER_BEHAVIOUR, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.d(TAG, "onResponse: ");
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        }){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                params.put("message", message);
+                return params;
+            }
+        };
+        MySingleton.getInstance(this).addToRequestQueue(stringRequest);
     }
 }

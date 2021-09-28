@@ -73,7 +73,7 @@ public class HomeActivity extends AppCompatActivity {
             binding.progressBar.setVisibility(View.VISIBLE);
             binding.addPostFeb.setVisibility(View.GONE);
             getDataCustomerApi();
-            
+
         }else if (type.matches("developer")){
             binding.progressBar.setVisibility(View.VISIBLE);
             binding.addPostFeb.setVisibility(View.VISIBLE);
