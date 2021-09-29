@@ -57,20 +57,15 @@
         <EditText
             android:id="@+id/emailEdt"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:hint="Email Address"
-            android:background="@drawable/email"
             android:textSize="@dimen/_16sdp"
             android:inputType="textEmailAddress"
-            android:drawableLeft="@drawable/ic_delete"
-            android:paddingLeft="@dimen/_10sdp"
-            android:drawablePadding="@dimen/_10sdp"
-
             android:textCursorDrawable="@drawable/cursor_white"
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="@color/textColorHint"
-            android:backgroundTint="@color/tittedWhite" />
+            android:backgroundTint="@color/black" />
 
         <Space
             android:layout_width="match_parent"
@@ -78,8 +73,7 @@
         <EditText
             android:id="@+id/passwordEdt"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/email"
+            android:layout_height="wrap_content"
             android:hint="Password"
             android:textSize="@dimen/_16sdp"
             android:inputType="textPassword"
@@ -87,12 +81,7 @@
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="@color/textColorHint"
-            android:backgroundTint="@color/tittedWhite"
-            android:drawableLeft="@drawable/ic_padlock_1_"
-            android:paddingLeft="@dimen/_10sdp"
-            android:drawablePadding="@dimen/_10sdp"
-            />
-
+            android:backgroundTint="@color/black"/>
 
         <LinearLayout
             android:layout_width="match_parent"
