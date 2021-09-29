@@ -12,5 +12,6 @@
     <color name="textColorHint">#34000000</color>
     <color name="edit_text_bg">#0C000000</color>
     <color name="red">#F44336</color>
+    <color name="green">#7FFF00</color>
     <color name="tintedBlack">#353535</color>
 </resources>

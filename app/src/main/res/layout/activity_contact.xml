@@ -24,6 +24,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:textSize="@dimen/_22sdp"
+            android:textStyle="bold"
             android:text="Trignsoft solutions pty ltd "/>
     </LinearLayout>
     <LinearLayout
@@ -39,6 +40,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/tail"
                 android:gravity="center"
                 android:orientation="vertical">
                 <LinearLayout
@@ -48,7 +50,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/primaryColor"
+                        android:textColor="@color/primaryDarkColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
                         android:text="Phone Number"/>
                 </LinearLayout>
                 <Space
@@ -62,6 +66,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
                         android:text="+61404913669"/>
                 </LinearLayout>
                 <Space
@@ -74,7 +79,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/primaryColor"
+                        android:textColor="@color/primaryDarkColor"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
                         android:text="Email"/>
                 </LinearLayout>
                 <Space
@@ -88,6 +95,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
                         android:text="trignsoftsolution@gmail.com"/>
                 </LinearLayout>
             </LinearLayout>
