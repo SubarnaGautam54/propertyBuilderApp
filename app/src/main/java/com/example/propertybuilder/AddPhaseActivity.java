@@ -47,7 +47,6 @@ import com.example.propertybuilder.ConstantApis.MySingleton;
 import com.example.propertybuilder.databinding.ActivityAddPhaseBinding;
 import com.example.propertybuilder.utils.Upload;
 import com.google.gson.Gson;
-
 import net.alhazmy13.mediapicker.Image.ImagePicker;
 import net.alhazmy13.mediapicker.Video.VideoPicker;
 
@@ -222,7 +221,7 @@ public class AddPhaseActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (checkPermissionREAD_EXTERNAL_STORAGE(AddPhaseActivity.this)) {
-                    // do your stuff..
+
                     chooseVideo();
                 }
             }
@@ -254,9 +253,7 @@ public class AddPhaseActivity extends AppCompatActivity {
                 phaseApiCall(phaseName,phaseDes, s);
 
                 uploading.dismiss();
-// api call us mai apny s or phase id send krni hy
-// video get ki uri hy ...
-// http://localhost/propertyBuilder/upload/s
+
             }
 
 
