@@ -21,7 +21,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_14sdp"/>
+                android:textSize="@dimen/_15sdp"/>
             <TextView
                 android:id="@+id/appointmentStatus"
                 android:layout_width="wrap_content"
@@ -37,13 +37,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/_5sdp"
+            android:background="@drawable/tail"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/adminRelyTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/_14sdp"
+                android:padding="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:textSize="@dimen/_15sdp"
                 android:textColor="@color/black"/>
 
             <TextView
@@ -53,6 +56,7 @@
                 android:text="Message By Admin"
                 android:textSize="@dimen/_15sdp"
                 android:textColor="@color/primaryDarkColor"
+                android:textStyle="bold"
                 android:layout_gravity="center_horizontal"/>
 
         </LinearLayout>
