@@ -25,6 +25,15 @@
         android:theme="@style/Theme.PropertyBuilder"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".FNewPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OTPVerifyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="true" />
+        <activity
             android:name=".UserBehaviourActivity"
             android:exported="true" />
         <activity android:name=".utils.AppointmentActivity" />

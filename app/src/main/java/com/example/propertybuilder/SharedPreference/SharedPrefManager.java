@@ -17,7 +17,6 @@ public class SharedPrefManager {
     private static final String KEY_EMAIL = "email";
     private static final String KEY_USER_TYPE = "userType";
 
-    /////////////////// reportLostVehicle ////////////////////
 
 
     private static SharedPrefManager mInstance;

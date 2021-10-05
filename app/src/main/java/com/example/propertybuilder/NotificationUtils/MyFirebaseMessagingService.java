@@ -49,10 +49,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             NotificationManager notificationManager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
             int notificationID = new Random().nextInt(3000);
 
-      /*
-        Apps targeting SDK 26 or above (Android O) must implement notification channels and add its notifications
-        to at least one of them. Therefore, confirm if version is Oreo or higher, then setup notification channel
-      */
+
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 setupChannels(notificationManager);
             }
@@ -88,10 +85,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                     NotificationManager notificationManager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
                     int notificationID = new Random().nextInt(3000);
 
-      /*
-        Apps targeting SDK 26 or above (Android O) must implement notification channels and add its notifications
-        to at least one of them. Therefore, confirm if version is Oreo or higher, then setup notification channel
-      */
+
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                         setupChannels(notificationManager);
                     }
@@ -124,10 +118,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                     NotificationManager notificationManager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
                     int notificationID = new Random().nextInt(3000);
 
-      /*
-        Apps targeting SDK 26 or above (Android O) must implement notification channels and add its notifications
-        to at least one of them. Therefore, confirm if version is Oreo or higher, then setup notification channel
-      */
+
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                         setupChannels(notificationManager);
                     }

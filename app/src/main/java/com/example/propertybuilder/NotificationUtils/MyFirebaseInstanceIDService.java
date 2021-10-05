@@ -13,12 +13,7 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
     @Override
     public void onTokenRefresh() {
-        /*
-          This method is invoked whenever the token refreshes
-          OPTIONAL: If you want to send messages to this application instance
-          or manage this apps subscriptions on the server side,
-          you can send this token to your server.
-        */
+
         String token = FirebaseInstanceId.getInstance().getToken();
 
         // Once the token is generated, subscribe to topic with the userId

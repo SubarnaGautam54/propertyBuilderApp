@@ -183,6 +183,7 @@ public class RegisterActivity extends AppCompatActivity {
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
             bitmap.compress(Bitmap.CompressFormat.JPEG, 10, byteArrayOutputStream);
             final String encodedImage = Base64.encodeToString(byteArrayOutputStream.toByteArray(), Base64.DEFAULT);
+            Log.d(TAG, "checkValidations: "+encodedImage);
 
 
             StringRequest stringRequest = new StringRequest(Request.Method.POST, Api.CUS_REGISTER, new Response.Listener<String>() {
@@ -194,15 +195,15 @@ public class RegisterActivity extends AppCompatActivity {
                     try {
                         JSONObject jsonObject = new JSONObject(response);
                         if (jsonObject.getBoolean("status")){
-                            Toast.makeText(RegisterActivity.this, "Account Created Successfully", Toast.LENGTH_SHORT).show();
-//                            Toast.makeText(RegisterActivity.this, "error: "+jsonObject.getString("status"), Toast.LENGTH_SHORT).show();
-
+//                            Toast.makeText(RegisterActivity.this, jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
 
                             startActivity(new Intent(RegisterActivity.this,SignInActivity.class));
                             finish();
                         }else {
-//                            Toast.makeText(RegisterActivity.this, ""+jsonObject.getBoolean("status"), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this, ""+jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
                             Log.d(TAG, "onResponse: "+jsonObject.getBoolean("status"));
+                            binding.progressBar.setVisibility(View.GONE);
+                            binding.registerBtn.setVisibility(View.VISIBLE);
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -239,7 +240,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
 
 
-        }
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -252,7 +253,7 @@ public class RegisterActivity extends AppCompatActivity {
                     bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), contentURI);
 
                     Log.d(TAG, "onActivityResult: "+bitmap);
-                        binding.profileImage.setImageBitmap(bitmap);
+                    binding.profileImage.setImageBitmap(bitmap);
 
                 } catch (IOException e) {
                     e.printStackTrace();

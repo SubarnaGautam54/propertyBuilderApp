@@ -54,22 +54,23 @@
         android:orientation="vertical"
 
         android:paddingHorizontal="@dimen/_16sdp">
+
         <EditText
             android:id="@+id/emailEdt"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Email Address"
             android:background="@drawable/email"
+            android:backgroundTint="@color/tittedWhite"
             android:drawableLeft="@drawable/ic_delete"
-            android:paddingLeft="@dimen/_10sdp"
             android:drawablePadding="@dimen/_10sdp"
-            android:textSize="@dimen/_16sdp"
+            android:hint="Email Address"
             android:inputType="textEmailAddress"
-            android:textCursorDrawable="@drawable/cursor_white"
+            android:paddingLeft="@dimen/_10sdp"
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="@color/textColorHint"
-            android:backgroundTint="@color/tittedWhite" />
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:textSize="@dimen/_16sdp" />
 
         <Space
             android:layout_width="match_parent"
@@ -109,6 +110,20 @@
                 android:textSize="@dimen/_14sdp"
                 android:textColor="@color/black"/>
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/forgotPasswordTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Forgot Password?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
 
 
 

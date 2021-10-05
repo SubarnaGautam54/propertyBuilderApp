@@ -1,5 +1,6 @@
 package com.example.propertybuilder.Adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,7 +48,7 @@ public class EditImageAdapter extends RecyclerView.Adapter<EditImageAdapter.EIVi
     }
 
     @Override
-    public void onBindViewHolder(@NonNull @org.jetbrains.annotations.NotNull EditImageAdapter.EIViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull @org.jetbrains.annotations.NotNull EditImageAdapter.EIViewHolder holder, @SuppressLint("RecyclerView") int position) {
         UserModel usersModel = SharedPrefManager.getInstance(context).getUser();
         String type = usersModel.getTypeUser();
         Glide.with(context)
