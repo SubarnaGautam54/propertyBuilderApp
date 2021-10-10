@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/tail"
     tools:context=".OTPVerifyActivity">
 
     <TextView
@@ -12,9 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Enter Otp From Email"
-        android:textColor="@color/primaryDarkColor"
-        android:textStyle="bold"
+        android:text="Enter Otp From Message"
+        android:textColor="@color/primaryColor"
         android:textSize="@dimen/_24sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="212dp"
         android:ems="10"
-        android:maxLength="4"
+        android:maxLength="6"
+        android:hint="e.g 123456"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -38,23 +37,49 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Confirm OTP"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberOtp" />
 
+
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/confirm"
+        app:layout_constraintStart_toStartOf="@+id/confirm"
+        app:layout_constraintTop_toTopOf="@id/confirm"
+        app:layout_constraintBottom_toBottomOf="@id/confirm"
+        tools:layout_editor_absoluteY="498dp" />
+
     <Button
-        android:id="@+id/back_btn"
+        android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
-        android:layout_gravity="center"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="100dp"
-        app:layout_constraintStart_toStartOf="parent"></Button>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Please Wait For Otp Verification Code!"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

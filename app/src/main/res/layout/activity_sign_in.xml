@@ -121,7 +121,7 @@
                 android:layout_alignParentRight="true"
                 android:text="Forgot Password?"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_17sdp"
+                android:textSize="@dimen/_15sdp"
                 android:textStyle="bold" />
         </RelativeLayout>
 
