@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "602497646885",
+    "firebase_url": "https://propertybuilder-521b4-default-rtdb.firebaseio.com",
     "project_id": "propertybuilder-521b4",
     "storage_bucket": "propertybuilder-521b4.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "602497646885-p3cp6begddl4hq20pqlmm033sl0ro3jd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.propertybuilder",
+            "certificate_hash": "308e44238a717db397c791932aa87c707179e542"
+          }
+        },
         {
           "client_id": "602497646885-uclb8j8n017vknioeg1vqit4mp837gcm.apps.googleusercontent.com",
           "client_type": 3

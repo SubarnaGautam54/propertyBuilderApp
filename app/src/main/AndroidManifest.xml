@@ -25,57 +25,57 @@
         android:theme="@style/Theme.PropertyBuilder"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".FNewPasswordActivity"
+            android:name="com.trignsoft.propertybuilder.FNewPasswordActivity"
             android:exported="true" />
         <activity
-            android:name=".OTPVerifyActivity"
+            android:name="com.trignsoft.propertybuilder.OTPVerifyActivity"
             android:exported="true" />
         <activity
-            android:name=".ForgotPasswordActivity"
+            android:name="com.trignsoft.propertybuilder.ForgotPasswordActivity"
             android:exported="true" />
         <activity
-            android:name=".UserBehaviourActivity"
+            android:name="com.trignsoft.propertybuilder.UserBehaviourActivity"
             android:exported="true" />
-        <activity android:name=".utils.AppointmentActivity" />
-        <activity android:name=".PhaseDetailActivity" />
-        <activity android:name=".AddPhaseActivity" />
-        <activity android:name=".Adapters.StaffDetailActivity" />
-        <activity android:name=".UserManagementActivity" />
-        <activity android:name=".SettingActivity" />
-        <activity android:name=".TaskActivityActivity" />
-        <activity android:name=".InspectionRequestActivity" />
-        <activity android:name=".BookingActivity" />
-        <activity android:name=".ContactActivity" />
+        <activity android:name="com.trignsoft.propertybuilder.utils.AppointmentActivity" />
+        <activity android:name="com.trignsoft.propertybuilder.PhaseDetailActivity" />
+        <activity android:name="com.trignsoft.propertybuilder.AddPhaseActivity" />
+        <activity android:name="com.trignsoft.propertybuilder.Adapters.StaffDetailActivity" />
+        <activity android:name="com.trignsoft.propertybuilder.UserManagementActivity" />
+        <activity android:name="com.trignsoft.propertybuilder.SettingActivity" />
+        <activity android:name="com.trignsoft.propertybuilder.TaskActivityActivity" />
+        <activity android:name="com.trignsoft.propertybuilder.InspectionRequestActivity" />
+        <activity android:name="com.trignsoft.propertybuilder.BookingActivity" />
+        <activity android:name="com.trignsoft.propertybuilder.ContactActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_map_key" />
 
         <activity
-            android:name=".AddPostActivity"
+            android:name="com.trignsoft.propertybuilder.AddPostActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".PostDetailUserActivity"
+            android:name="com.trignsoft.propertybuilder.PostDetailUserActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".HomeActivity"
+            android:name="com.trignsoft.propertybuilder.HomeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ProfileActivity"
+            android:name="com.trignsoft.propertybuilder.ProfileActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".DashBoardUserActivity"
+            android:name="com.trignsoft.propertybuilder.DashBoardUserActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.trignsoft.propertybuilder.RegisterActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SignInActivity"
+            android:name="com.trignsoft.propertybuilder.SignInActivity"
             android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name="com.trignsoft.propertybuilder.SplashScreenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -84,13 +84,13 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".NotificationUtils.MyFirebaseInstanceIDService">
+        <service android:name="com.trignsoft.propertybuilder.NotificationUtils.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
         <service
-            android:name=".NotificationUtils.MyFirebaseMessagingService"
+            android:name="com.trignsoft.propertybuilder.NotificationUtils.MyFirebaseMessagingService"
             android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
